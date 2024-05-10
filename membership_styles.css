@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245); /* Light gray */
+    color: rgb(51, 51, 51); /* Dark gray */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(0, 0, 0); /* Black */
+    color: rgb(0, 0, 255); /* Blue */
+    padding: 20px 0;
+}
+
+/* Style for the logo */
+.logo {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Navigation Links Styles */
+.nav-links {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px; /* Add border radius */
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links  a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255); /* White */
+}
+
+.nav-links li a:hover {
+    padding: 10px 16px;
+    background-color: rgb(128, 128, 128); /* Gray */
+    color: rgb(255, 255, 255); /* White */
+    border-radius: 10px; /* Add border radius */
+}
+
+.nav-links a.active {
+    background-color: rgb(128, 128, 128); /* Gray */
+    color: rgb(255, 255, 255); /* White */
+    padding: 8px 16px;
+    border-radius: 10px; /* Add border radius */
+}
+
+/* Membership Form Styles */
+.membership-form  {
+    background-image: url('backgroundImg2.png'); /* Set background image */
+    /* Set a specific height */
+    min-height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255); /* White */
+    padding: 100px 0; /* Padding */
+    text-align: center; /* Center align the text */
+    opacity: 0.9; /* Set opacity */
+}
+
+.membership-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 255); /* Blue */
+}
+
+.membership-form p {
+    color: rgb(255, 255, 255); /* White */
+    margin-bottom: 40px;
+}
+
+.membership-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0); /* Black */
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0); /* Black */
+    color: rgb(255, 255, 255); /* White */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: rgb(34, 34, 34); /* Dark gray */
+}
+
+.membership-types .type {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%; /* Adjust the width as needed */
+    margin: 50px 30px; /* Adjust margin as needed */
+    border: 1px solid rgb(0, 0, 0); /* Black */
+    border-radius: 25px; /* Make the image circular */
+    padding: 20px 5px;
+    background-color: rgb(0, 0, 0); /* Black */
+    color: rgb(255, 255, 255); /* White */
+}
+
+.membership-types .type h3 {
+    margin-bottom: 60px;
+}
+
+.membership-types .type p {
+    line-height: 1.5;
+    color: rgb(255, 255, 255); /* White */
+}
+
+.membership-types .type img {
+    width: 400px;
+}
+
+.special-type img {
+    display: inline; /* Set display to flex */
+    justify-content: center; /* Center align items horizontally */
+    flex-wrap: wrap; /* Enable wrapping */
+    width: 0px; /* Set image width */
+    height: 300px; /* Set image height */
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(0, 0, 0); /* Black */
+    color: rgb(255, 255, 255); /* White */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}

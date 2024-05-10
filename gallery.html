@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - STAYFIT</title>
+    <link rel="stylesheet" href="gallery_styles.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">STAYFIT</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="membership_page.html">Membership</a></li>
+                    <li><a href="gallery.html" class="active">More</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <h2 style="text-align:center">ENJOY YOUR SESSION WITH OUR MANY OPTIONS!</h2>
+
+       <div class="slideshow-container">
+           <div class="mySlides fade">
+               <div class="numbertext">1 / 6</div>
+               <img src="galleryImg1.png"  style="width:100%" alt="img1">
+           </div>
+
+           <div class="mySlides fade">
+               <div class="numbertext">2 / 6</div>
+               <img src="galleryImg2.png" style="width:100%" alt="img2" >
+           </div>
+
+           <div class="mySlides fade">
+               <div class="numbertext">3 / 4</div>
+               <img src="galleryImg3.png" style="width:100%" alt="img3">
+           </div>
+
+           <div class="mySlides fade">
+               <div class="numbertext">4 / 4</div>
+               <img src="galleryImg4.png" style="width:100%" alt="img4">
+           </div>
+
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+
+       <br>
+
+       <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1)"></span>
+           <span class="dot" onclick="currentSlide(2)"></span>
+           <span class="dot" onclick="currentSlide(3)"></span>
+           <span class="dot" onclick="currentSlide(4)"></span>
+       </div>
+   </main>
+
+   <div class="container">
+       <h1>Gym Schedule</h1>
+       <table class="calendar">
+           <tr>
+               <th>Monday</th>
+               <th>Tuesday</th>
+               <th>Wednesday</th>
+               <th>Thursday</th>
+               <th>Friday</th>
+               <th>Saturday</th>
+               <th>Sunday</th>
+           </tr>
+           <tr>
+               <td class="day open">Open</td>
+               <td class="day">Closed</td>
+               <td class="day open">Open</td>
+               <td class="day open">Open</td>
+               <td class="day">Closed</td>
+               <td class="day open">Open</td>
+               <td class="day">Closed</td>
+           </tr>
+       </table>
+   </div>
+
+
+<div class="contact">
+           <h2>Contact Us</h2>
+           <p>For inquiries, please contact us via:</p>
+           <ul>
+               <li>Phone: <a href="tel:123456789">123-456-789</a></li>
+               <li>Email: <a href="mailto:info@stayfit.com">info@stayfit.com</a></li>
+               <li>Visit Us: 123 Gym Street, Cityville</li>
+           </ul>
+       </div>
+
+<div id="map"></div>
+<script>
+function initMap(){
+   let newYork ={lat: 40.71159436387716, lng:-73.98386979534712};
+   let map = new google.maps.Map(
+	document.getElementById('map'), {zoom: 4, center: newYork});
+   let marker = new google.maps.Marker({position: newYork, map: map});
+
+   }
+
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXPQsvYLHCtac4O0FH7wc9GS77LjELzLE&callback=initMap"></script>
+
+   <footer>
+       <p>&copy; 2024 STAYFIT. All rights reserved.</p>
+   </footer>
+
+
+</body>
+</html>

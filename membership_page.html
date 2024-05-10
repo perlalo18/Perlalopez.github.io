@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form - Stay Fit</title>
+    <link rel="stylesheet" href="membership_styles.css">
+    <script src="validation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">STAYFIT</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="membership_page.html" class="active">Membership</a></li>
+                    <li><a href="gallery.html">More</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="membership-form">
+            <div class="container">
+                <h2>Join Our Fitness Community</h2>
+                <p><b>Fill out the form below to become a member and start your fitness journey with us!</b></p>
+                <form id="membership-form" onsubmit="validateForm(event)">
+                    <div class="form-group">
+                        <label for="name"><b>Name:</b></label>
+                        <input type="text" id="name" required>
+
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" id="email" required>
+
+                        <label for="age"><b>Age:</b></label>
+                        <input type="number" id="age" required>
+
+			<label for="membership">Membership:</label>
+                        <select id="membership" required>
+                            <option value="" disabled selected>Select Membership Type</option>
+                            <option value="basic">Basic</option>
+                            <option value="premium">Premium</option>
+                            <option value="elite">Elite</option>
+                        </select>
+                        <span id="membershipError" class="error"></span>
+                    </div>
+                    <input type="submit" value="Join Now" class="submit-btn">
+                    <div class="membership-types">
+                        <div class="type">
+                            <h3>Basic Membership</h3>
+                            <p>Access to our gym facilities, group fitness classes, and personalized training sessions.</p>
+                    <img src="typeimg.png" alt="Type1">
+
+                        </div>
+                        <div class="type">
+                            <h3>Premium Membership</h3>
+                            <p>Everything in Basic Membership, plus access to our spa facilities, nutrition counseling, and priority booking for classes.</p>
+                    <img src="typeimg2.png" alt="Type2">
+
+                        </div>
+			<div class="special-type">
+                        <div class="type">
+                            <h3>Elite Membership</h3>
+                            <p>Everything in Premium Membership, plus a personal trainer, unlimited access to our facilities, and a complimentary fitness assessment.</p>
+                    <img src="typeimg3.png" alt="Type3">
+                    <img src="typeimg4.png" alt="Type3">
+                    <img src="typeimg5.png" alt="Type3">
+
+                        </div>
+			</div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 STAYFIT. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

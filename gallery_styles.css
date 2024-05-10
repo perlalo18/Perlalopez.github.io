@@ -1,0 +1,331 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    color: blue;
+    padding: 20px 0;
+}
+
+
+/* Style for the logo */
+.logo {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Navigation Links Styles */
+.nav-links {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px; /* Add border radius */
+
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.nav-links  a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5px 10px;
+  color: white; /* Set text color to white */
+
+}
+
+.nav-links li a:hover {
+    padding: 10px 16px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px; /* Add border radius */
+
+
+}
+
+.nav-links a.active {
+  background-color: gray;
+  color: white;
+  padding: 8px 16px;
+    border-radius: 10px; /* Add border radius */
+}
+/* CSS for full-width slideshow */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+/* Add styles for number text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+}
+
+/* Add styles for dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add styles for active dots */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+        /* Calendar Styles */
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        .day {
+            border: 1px solid #ccc;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .day.open {
+            background-color: #1abc9c;
+            color: #fff;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .day {
+                font-size: 12px;
+            }
+        }
+
+.contact {
+  text-align: center;
+}
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is th/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245); /* Light gray */
+    color: rgb(51, 51, 51); /* Dark gray */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(0, 0, 0); /* Black */
+    color: rgb(0, 0, 255); /* Blue */
+    padding: 20px 0;
+}
+
+
+/* Style for the logo */
+.logo {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Navigation Links Styles */
+.nav-links {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px; /* Add border radius */
+
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.nav-links  a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255); /* White */
+
+}
+
+.nav-links li a:hover {
+    padding: 10px 16px;
+    background-color: rgb(128, 128, 128); /* Gray */
+    color: rgb(255, 255, 255); /* White */
+    border-radius: 10px; /* Add border radius */
+
+
+}
+
+.nav-links a.active {
+    background-color: rgb(128, 128, 128); /* Gray */
+    color: rgb(255, 255, 255); /* White */
+    padding: 8px 16px;
+    border-radius: 10px; /* Add border radius */
+}
+/* CSS for full-width slideshow */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+/* Add styles for number text */
+.numbertext {
+    color: rgb(242, 242, 242); /* Light gray */
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+    left: 0;
+}
+
+/* Add styles for dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(187, 187, 187); /* Light gray */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add styles for active dots */
+.active, .dot:hover {
+    background-color: rgb(113, 113, 113); /* Dark gray */
+}
+
+/* Calendar Styles */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.day {
+    border: 1px solid rgb(204, 204, 204); /* Light gray */
+    padding: 50px;
+    text-align: center;
+}
+
+.day.open {
+    background-color: rgb(26, 188, 156); /* Turquoise */
+    color: rgb(255, 255, 255); /* White */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .day {
+        font-size: 12px;
+    }
+}
+
+.contact {
+    text-align: center;
+}
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(0, 0, 0); /* Black */
+    color: rgb(255, 255, 255); /* White */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+e width of the web page */
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
